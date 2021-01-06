@@ -1,0 +1,56 @@
+.hero {
+    color: white;
+    background-color: #00334e;
+    height: 50%;
+    padding: 4em 4em 9em 4em;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.authenticate {
+    margin: 0 0 0 5em;
+}
+
+.signup-btn {
+    background-color: #fa8729;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    margin-bottom: 0.8em;
+    padding: 0.5em 8em 0.5em 8em;
+}
+
+.login-btn {
+    background-color: white;
+    border: 2px solid #fa8729;
+    color: #fa8729;
+    border-radius: 50px;
+    padding: 0.5em 10.1em 0.5em 10.1em;
+}
+
+.image {
+    width: 85%;
+}
+
+.navlink {
+    text-decoration: none !important;
+}
+
+.navbar-dak {
+    background-color: #00334e;
+    /*background-color: #00112c !important;*/
+}
+
+.explainer-1, .explainer-2 {
+    margin-top: 5em;
+}
+
+footer {
+    margin: auto;
+    /*display: grid;
+    place-items: center !important;*/
+}
+
+@import '~bootstrap/scss/bootstrap.scss';
