@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import { NavLink } from "react-router-dom";
+import { auth } from "../firebase";
 
 const PasswordReset = () => {
   const [email, setEmail] = useState("");
@@ -17,6 +18,14 @@ const PasswordReset = () => {
 
   const sendResetEmail = event => {
     event.preventDefault();
+    auth.sendPasswordResetEmail(email)
+    .then(() => {
+        setEmailHasBeenSent(true);
+        setTimeout(() => {setEmailHasBeenSent(false)}, 3000);
+      })
+      .catch(() => {
+        setError("Error resetting password");
+      });
   };
 
   return (
@@ -39,17 +48,18 @@ const PasswordReset = () => {
           )}
             <Form.Group controlId="formGroupEmail">
               <Form.Label>Email:</Form.Label>
-              <Form.Control
+              <Form.Control autoComplete="true"
                type="email"
                placeholder="Enter email" 
                name="userEmail"
                value = {email}
-               id="userEmail"
                onChange = {onChangeHandler}
               />
             </Form.Group>
             
-            <Button variant="primary" size="lg" block>
+            <Button variant="primary" size="lg" block onClick={event => {
+              sendResetEmail(event);
+            }}>
               Send me a reset link
             </Button>
         </Form>

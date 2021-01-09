@@ -2,14 +2,18 @@ import React, {useState} from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import { NavLink } from "react-router-dom";
+import { auth } from "../firebase";
 
 const Login = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState(null);
-    const signInWithEmailAndPasswordHandler = 
-            (event,email, password) => {
-                event.preventDefault();
+    const signInWithEmailAndPasswordHandler = (event,email, password) => {
+            event.preventDefault();
+            auth.signInWithEmailAndPassword(email, password).catch(error => {
+              setError("Error signing in with password and email!");
+              console.error("Error signing in with password and email", error);
+            });
     };
 
       const onChangeHandler = (event) => {
@@ -32,24 +36,21 @@ const Login = () => {
         <Form>
             <Form.Group controlId="formGroupEmail">
               <Form.Label>Email:</Form.Label>
-              <Form.Control
+              <Form.Control autoComplete="true"
                type="email"
                placeholder="Enter email" 
                name="userEmail"
                value = {email}
-               id="userEmail"
                onChange = {(event) => onChangeHandler(event)}
               />
             </Form.Group>
             <Form.Group controlId="formGroupPassword">
               <Form.Label>Password</Form.Label>
-              <Form.Control
-               type="password" 
-               placeholder="Password" 
+              <Form.Control autoComplete="true"
+               type="password"
                name="userPassword"
                value = {password}
                placeholder="Enter Password"
-               id="userPassword"
                onChange = {(event) => onChangeHandler(event)}
                />
             </Form.Group>

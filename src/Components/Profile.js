@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Profile() {
+const Profile = () => {
     return (
         <>
         <div className="bio">
@@ -25,4 +25,6 @@ export default function Profile() {
         </div>
         </>
     )
-}
+};
+
+export default Profile;

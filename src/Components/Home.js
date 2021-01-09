@@ -1,7 +1,5 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import Button from "react-bootstrap/Button";
-import Jumbotron from 'react-bootstrap/Jumbotron';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -11,7 +9,7 @@ import logo from "../images/p-logo (2).png";
 import heroImg from "../images/info.svg";
 import placeholder from "../images/Rectangle 5.png";
 
-export default function Home() {
+const Home = () => {
 
 return (
     <>
@@ -95,5 +93,7 @@ return (
       <p><small>© 2021. Made with ❤ by shula</small></p>
     </footer>
     </>
-)
-}
+);
+};
+
+export default Home;
