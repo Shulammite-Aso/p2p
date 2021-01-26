@@ -1,8 +1,7 @@
 .hero {
     color: white;
     background-color: #00334e;
-    height: 50%;
-    padding: 4em 4em 9em 4em;
+    padding: 2em 1em 6em 1em;
 }
 
 .container-fluid {
@@ -10,7 +9,7 @@
 }
 
 .authenticate {
-    margin: 0 0 0 5em;
+ //   margin: 0 0 0 5em;
 }
 
 .signup-btn {
@@ -18,8 +17,11 @@
     color: white;
     border: none;
     border-radius: 50px;
-    margin-bottom: 0.8em;
-    padding: 0.5em 8em 0.5em 8em;
+    display: block;
+    margin: 2.5em 0 0.9em 0;
+    position: relative;
+    width: 90%;
+    padding: 0.27rem;
 }
 
 .login-btn {
@@ -27,11 +29,16 @@
     border: 2px solid #fa8729;
     color: #fa8729;
     border-radius: 50px;
-    padding: 0.5em 10.1em 0.5em 10.1em;
+    display: block;
+    margin-bottom: 2em;
+    position: relative;
+    width: 90%;
+    padding: 0.26rem;
 }
 
 .image {
-    width: 85%;
+    width: 80%;
+    margin-left: 2em;
 }
 
 .navlink {
@@ -53,4 +60,167 @@ footer {
     place-items: center !important;*/
 }
 
+
+@media only screen and (min-width: 535px) {
+    .hero h5 {
+        margin-right: 3em;
+    }
+
+    .signup-btn, .login-btn {
+        width: 72%;
+    }
+
+}
+
+
+@media only screen and (min-width: 768px) {
+
+.hero {
+    padding: 4em 4em 7em 4em;
+}
+
+.image {
+    margin: 3em 0 0 3.5em;
+}
+
+.hero h1 {
+    margin-top: 1em;
+}
+
+.authenticate {
+  //  margin: 0 0 0 3em;
+}
+
+.signup-btn {
+    margin-top: 4em;
+}
+
+}
+
+@media only screen and (max-width: 900px) {
+    .image {
+        width: 90%;
+    }  
+}
+
+
+@media only screen and (min-width: 1200px) {
+    .image {
+     //   margin: 1em 0 0 3.5em;
+    }
+    
+    .hero h1 {
+     //   margin-top: 1em;
+    }
+
+    .image {
+        margin: 3.8em 0 0 3.5em;
+    }
+    
+    .hero h1 {
+        margin-top: 3.4em;
+    }
+}
+
+
+// Styles for Profile.js
+
+.body {
+   // background-color: #00334e;
+    background-color: black;
+   // background-color: #E2E4E4;
+}
+
+.profile-page {
+   // background-color: #1d273d;
+   // background-color: #222222;
+    color: #fff;
+    max-width: 880px;
+    border-radius: 4px;
+    margin: 0 auto;
+    padding: 0 0.5em 0 0.5em;
+    //margin: 0px auto;
+}
+
+.bio {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 2em 0 2.5em 0;
+}
+
+.bio-summary {
+    text-align: center;
+    max-width: 300px;
+    p{
+        font-size: smaller;
+        font-weight: 100;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+h3, h4 {
+    margin: 0;
+}
+#name {
+   // color: #F1D4D4;
+    margin: 0.3em 0 0.2em 0;
+}
+
+.works {
+    //text-align: center;
+    margin-top: 3rem;
+    h2 {
+       // margin-bottom: 1em;
+        text-align: center;
+    }
+}
+
+.sub-header-style {
+    color: #ff9642;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.contact-btn, .authenticate {
+    background-color: #fa8729;
+    border: none;
+    padding: 0.6em;
+    border-radius: 0.6em;
+}
+
+.socials a {
+    padding: 0.4em
+    //font-size:48px;
+    //color:red;
+}
+
+.hr {
+    border-bottom: 1px solid #fa8729;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.footer {
+    background-color: #222222;
+    border-radius: 8px;
+    padding: 2em;
+
+    h2 {
+        text-align: center;
+        margin-bottom: 1em;
+    }
+}
+
+.contact {
+    display: flex;
+   // flex-flow: column wrap;
+    justify-content: space-around;
+    div p {
+        display: block;
+    }
+}
 @import '~bootstrap/scss/bootstrap.scss';

@@ -4,6 +4,7 @@ body {
    background-color: #1d273d;
     /*padding: 1em;*/ 
     font-family: 'Montserrat', sans-serif;
+    max-width: 80%;
 }
 
 a {

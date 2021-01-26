@@ -10,7 +10,7 @@ import PasswordReset from "./PasswordReset";
 import "../App.scss";
 
 const Application = () => {
-  const user = useContext(UserContext);
+  const user = true;
     return(
       user ?
       <Profile />

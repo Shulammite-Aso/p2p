@@ -32,7 +32,7 @@ return (
     <Row>
       <Col xs={12} md={6}>
       <h1>Showcase Your Work</h1>
-    <h5>With portfolia, quickly create a one page portfolio space in munites. Then go on to show us what you do.
+    <h5>With portfolia, quickly create a one page portfolio space in munites. Then go on to show the world what you do.
     </h5>
 
     <div className="authenticate">
