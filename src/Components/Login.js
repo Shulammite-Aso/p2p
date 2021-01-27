@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import { NavLink } from "react-router-dom";
-import { auth } from "../firebase";
+import { auth, signInWithGoogle } from "../firebase";
 
 const Login = () => {
     const [email, setEmail] = useState('');
@@ -62,7 +62,10 @@ const Login = () => {
         
         <p className="text-center my-3">or</p>
 
-        <Button variant="danger" size="lg" block>
+        <Button variant="danger" size="lg" block 
+        onClick={() => {
+          signInWithGoogle();
+        }}>
             Login with google
         </Button>
        

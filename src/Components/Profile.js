@@ -1,5 +1,6 @@
 import React from "react";
-import Container from 'react-bootstrap/Container';
+import {auth} from "../firebase";
+import Button from "react-bootstrap/Button";
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
@@ -54,7 +55,10 @@ const Profile = () => {
             </Card>
         </div>
         <div className="gallary">
-
+        <Button variant="primary" onClick = {() => {auth.signOut()}}>
+              Sign Out
+            </Button>
+        
         </div>
         <div className="footer">
             <h2>Get in touch.</h2>

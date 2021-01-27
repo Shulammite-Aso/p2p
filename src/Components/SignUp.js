@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import { NavLink } from "react-router-dom";
-import { auth, generateUserDocument } from "../firebase";
+import { auth, signInWithGoogle, generateUserDocument } from "../firebase";
 
 const SignUp = () => {
   const [email, setEmail] = useState("");
@@ -84,7 +84,13 @@ const SignUp = () => {
         </Form>
 
         <p className="text-center">or</p>
-        <Button type="submit" variant="danger" size="lg" block>
+        <Button type="submit" variant="danger" size="lg" block onClick={() => {
+            try {
+              signInWithGoogle();
+            } catch (error) {
+              console.error("Error signing in with Google", error);
+            }
+          }}>
             Sign in with google
         </Button>
         <p className="text-center text-muted my-3">
