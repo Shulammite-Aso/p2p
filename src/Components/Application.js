@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Route, BrowserRouter} from "react-router-dom";
+import { Route, BrowserRouter, Redirect} from "react-router-dom";
 import { UserContext } from "../providers/UserProvider";
 import Home from "./Home";
 import Profile from "./Profile";
@@ -13,7 +13,12 @@ const Application = () => {
   const user = useContext(UserContext);
     return(
       user ?
-      <Profile />
+      <>
+        <BrowserRouter>
+          <Redirect to="/" /> 
+        </BrowserRouter>
+          <Profile />
+      </>
       :
       <BrowserRouter>
             <Route exact path="/" component={Home} />

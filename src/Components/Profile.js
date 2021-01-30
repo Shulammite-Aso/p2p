@@ -1,20 +1,26 @@
-import React from "react";
+import React, { useContext } from "react";
 import {auth} from "../firebase";
 import Button from "react-bootstrap/Button";
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
+import { UserContext } from "../providers/UserProvider";
 import placeholder from "../images/square.png";
 import weddingPhoto from "../images/gabriel-tovar-bS73y7WoNVE-unsplash.jpg";
 import preWedding from "../images/briona-baker-2CnZ19gQgak-unsplash.jpg";
 
 const Profile = () => {
+
+  const user = useContext(UserContext);
+  const {displayName} = user;
+  console.log(user);
+
     return (
         <div className="body">
         <div className="profile-page">
         <section className="bio">
-            <div className="bio-summary">
-                <h1 id="name">Shula.</h1>
+            <div className="bio-summary" contentEditable>
+                <h1 id="name">{displayName}.</h1>
                 <p>I take breath taking photos. Freezing time, and creating lasting memories.</p>
                 <div className="socials">
                     <a href="#"><i class="fab fa-twitter"></i></a>
