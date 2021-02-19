@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { Route, BrowserRouter, Redirect} from "react-router-dom";
 import { UserContext } from "../providers/UserProvider";
 import Home from "./Home";
-import Profile from "./Profile";
+import Profile from "./Profile/Profile";
 import Login from "./Login";
 import SignUp from "./SignUp";
 import PasswordReset from "./PasswordReset";

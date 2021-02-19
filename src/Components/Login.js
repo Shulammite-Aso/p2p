@@ -28,7 +28,7 @@ const Login = () => {
       };
 
   return (
-    <div className="">
+    <div className="authentication-page">
       <h1 className="text-center">Sign In</h1>
       <div className="border rounded px-4">
         {error !== null && <div className="text-center">{error}</div>}

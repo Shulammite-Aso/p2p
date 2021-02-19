@@ -36,7 +36,7 @@ const SignUp = () => {
     } 
   };
   return (
-    <div className="">
+    <div className="authentication-page">
       <h1 className="text-center">Sign Up</h1>
       <div className="border rounded px-4">
         {error !== null && (

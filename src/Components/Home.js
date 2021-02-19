@@ -89,7 +89,7 @@ return (
     </div>
   </Row>
 </Container>
-    <footer className="">
+    <footer className="foo">
       <p><small>© 2021. Made with ❤ by shula</small></p>
     </footer>
     </>
