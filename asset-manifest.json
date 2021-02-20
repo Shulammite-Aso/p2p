@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/portfolia/static/css/main.5235d14f.chunk.css",
-    "main.js": "/portfolia/static/js/main.cf9448e5.chunk.js",
-    "main.js.map": "/portfolia/static/js/main.cf9448e5.chunk.js.map",
-    "runtime-main.js": "/portfolia/static/js/runtime-main.6127a14a.js",
-    "runtime-main.js.map": "/portfolia/static/js/runtime-main.6127a14a.js.map",
-    "static/js/2.2646618c.chunk.js": "/portfolia/static/js/2.2646618c.chunk.js",
-    "static/js/2.2646618c.chunk.js.map": "/portfolia/static/js/2.2646618c.chunk.js.map",
-    "static/js/3.e343e851.chunk.js": "/portfolia/static/js/3.e343e851.chunk.js",
-    "static/js/3.e343e851.chunk.js.map": "/portfolia/static/js/3.e343e851.chunk.js.map",
-    "index.html": "/portfolia/index.html",
-    "static/css/main.5235d14f.chunk.css.map": "/portfolia/static/css/main.5235d14f.chunk.css.map",
-    "static/js/2.2646618c.chunk.js.LICENSE.txt": "/portfolia/static/js/2.2646618c.chunk.js.LICENSE.txt",
-    "static/media/briona-baker-2CnZ19gQgak-unsplash.817c371a.jpg": "/portfolia/static/media/briona-baker-2CnZ19gQgak-unsplash.817c371a.jpg",
-    "static/media/gabriel-tovar-bS73y7WoNVE-unsplash.da43f366.jpg": "/portfolia/static/media/gabriel-tovar-bS73y7WoNVE-unsplash.da43f366.jpg",
-    "static/media/info.1e285122.svg": "/portfolia/static/media/info.1e285122.svg"
+    "main.css": "./static/css/main.5235d14f.chunk.css",
+    "main.js": "./static/js/main.cf9448e5.chunk.js",
+    "main.js.map": "./static/js/main.cf9448e5.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.90a0806e.js",
+    "runtime-main.js.map": "./static/js/runtime-main.90a0806e.js.map",
+    "static/js/2.c2fb4704.chunk.js": "./static/js/2.c2fb4704.chunk.js",
+    "static/js/2.c2fb4704.chunk.js.map": "./static/js/2.c2fb4704.chunk.js.map",
+    "static/js/3.e343e851.chunk.js": "./static/js/3.e343e851.chunk.js",
+    "static/js/3.e343e851.chunk.js.map": "./static/js/3.e343e851.chunk.js.map",
+    "index.html": "./index.html",
+    "static/css/main.5235d14f.chunk.css.map": "./static/css/main.5235d14f.chunk.css.map",
+    "static/js/2.c2fb4704.chunk.js.LICENSE.txt": "./static/js/2.c2fb4704.chunk.js.LICENSE.txt",
+    "static/media/briona-baker-2CnZ19gQgak-unsplash.817c371a.jpg": "./static/media/briona-baker-2CnZ19gQgak-unsplash.817c371a.jpg",
+    "static/media/gabriel-tovar-bS73y7WoNVE-unsplash.da43f366.jpg": "./static/media/gabriel-tovar-bS73y7WoNVE-unsplash.da43f366.jpg",
+    "static/media/info.1e285122.svg": "./static/media/info.1e285122.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.6127a14a.js",
-    "static/js/2.2646618c.chunk.js",
+    "static/js/runtime-main.90a0806e.js",
+    "static/js/2.c2fb4704.chunk.js",
     "static/css/main.5235d14f.chunk.css",
     "static/js/main.cf9448e5.chunk.js"
   ]
