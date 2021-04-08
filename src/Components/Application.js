@@ -11,11 +11,12 @@ import "../App.scss";
 
 const Application = () => {
   const user = useContext(UserContext);
+  //const {displayName} = user;
     return(
       user ?
       <>
         <BrowserRouter>
-          <Redirect to="/" /> 
+          <Redirect to={user.displayName} /> 
         </BrowserRouter>
           <Profile />
       </>
