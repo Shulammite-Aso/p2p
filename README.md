@@ -3,3 +3,9 @@ This is currently an incomplete project. But the idea is to make an app where us
 
 ## Update
 Currently building a 3-tier version which may replace this.
+
+## Current features & tools
+- User authentication with firebase
+- DB storage with firebase/firestore
+- Styling with react-bootstrap
+- Routing with react-router-dom
